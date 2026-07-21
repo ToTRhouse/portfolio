@@ -7825,3 +7825,18 @@ dialog :link{
     display:none;
   }
 }
+
+
+#toolbarContainer,
+#secondaryToolbar,
+#editorModeButtons,
+#toolbarSidebar,
+#sidebarContainer,
+#findbar,
+#loadingBar {
+  display: none !important;
+}
+
+#viewerContainer {
+  top: 0 !important;
+}
