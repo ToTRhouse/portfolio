@@ -7826,40 +7826,23 @@ dialog :link{
   }
 }
 
-/* Hide UI */
-#toolbarViewer,
-#toolbarViewerLeft,
-#toolbarViewerMiddle,
-#toolbarViewerRight,
-#editorModeButtons,
-#viewFindButton,
-#viewFindSeparator,
-#numPages,
-#pageNumber,
-#scaleSelectContainer,
-#loadingBar,
-#toolbarContainer {
-    display: none !important;
-}
-
+/* Keep the viewer flush with the top */
 #viewerContainer {
     top: 0 !important;
 }
 
-
-
-
-/* Hide unwanted buttons */
+/* Hide unwanted toolbar controls */
 #viewsManagerToggleButton,
-#zoomOutButton,
-#zoomInButton,
-#scaleSelectContainer,
 #viewFindButton,
 #printButton,
 #downloadButton,
-#editorModeButtons,
 #secondaryToolbarToggle,
+#editorModeButtons,
+#zoomOutButton,
+#zoomInButton,
+#scaleSelectContainer,
 #presentationModeButton,
-#openFileButton {
+#openFileButton,
+#viewBookmarkButton {
     display: none !important;
 }
