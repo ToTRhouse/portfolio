@@ -7826,27 +7826,40 @@ dialog :link{
   }
 }
 
-/* Keep viewer flush with top */
-#viewerContainer {
-  top: 0 !important;
-}
-
-/* Hide entire middle and right toolbar groups */
+/* Hide UI */
+#toolbarViewer,
+#toolbarViewerLeft,
 #toolbarViewerMiddle,
-#toolbarViewerRight {
-  display: none !important;
+#toolbarViewerRight,
+#editorModeButtons,
+#viewFindButton,
+#viewFindSeparator,
+#numPages,
+#pageNumber,
+#scaleSelectContainer,
+#loadingBar,
+#toolbarContainer {
+    display: none !important;
 }
 
-/* Hide the page manager/sidebar button */
-#viewsManagerToggleButton {
-  display: none !important;
+#viewerContainer {
+    top: 0 !important;
 }
 
-/* Center the remaining controls */
-#toolbarViewer {
-  justify-content: center !important;
-}
 
-#toolbarViewerLeft {
-  margin: 0 auto !important;
+
+
+/* Hide unwanted buttons */
+#viewsManagerToggleButton,
+#zoomOutButton,
+#zoomInButton,
+#scaleSelectContainer,
+#viewFindButton,
+#printButton,
+#downloadButton,
+#editorModeButtons,
+#secondaryToolbarToggle,
+#presentationModeButton,
+#openFileButton {
+    display: none !important;
 }
