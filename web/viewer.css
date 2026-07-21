@@ -7826,6 +7826,9 @@ dialog :link{
   }
 }
 
+
+/*hide ui*/
+
 #toolbarViewer,
 #toolbarViewerLeft,
 #toolbarViewerMiddle,
@@ -7843,4 +7846,15 @@ dialog :link{
 
 #viewerContainer {
     top: 0 !important;
+}
+
+
+@media (max-width: 768px) {
+  #toolbarContainer {
+    display: none !important;
+  }
+
+  #viewerContainer {
+    top: 0 !important;
+  }
 }
