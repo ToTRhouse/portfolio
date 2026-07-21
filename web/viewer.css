@@ -7827,43 +7827,43 @@ dialog :link{
 }
 
 
-/*hide ui*/
-
-/* Hide the entire toolbar */
+/* Hide the PDF.js UI */
+#toolbarViewer,
+#toolbarViewerLeft,
+#toolbarViewerMiddle,
+#toolbarViewerRight,
+#editorModeButtons,
+#viewFindButton,
+#viewFindSeparator,
+#numPages,
+#pageNumber,
+#scaleSelectContainer,
+#loadingBar,
 #toolbarContainer {
     display: none !important;
 }
 
-/* Remove the space left by the toolbar */
+/* Remove the gap left by the toolbar */
 #viewerContainer {
     top: 0 !important;
 }
 
-/* Remove page scrollbar */
-html,
-body {
-    overflow: hidden !important;
-}
-
-/* Desktop */
-@media (min-width: 769px) {
-    #viewerContainer {
-        overflow: hidden !important;
-    }
-}
-
-/* Mobile */
+/* Hide the toolbar on mobile too */
 @media (max-width: 768px) {
-    /* PDF.js sometimes shows the page number in a floating toolbar */
-    #toolbarContainer,
-    #toolbarViewer,
-    #floatingToolbar,
-    #floatingToolbarContainer {
+    #toolbarContainer {
         display: none !important;
     }
 
     #viewerContainer {
         top: 0 !important;
+    }
+}
+
+/* Remove scrollbars on desktop only */
+@media (min-width: 769px) {
+    html,
+    body,
+    #viewerContainer {
         overflow: hidden !important;
     }
 }
