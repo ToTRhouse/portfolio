@@ -7829,32 +7829,41 @@ dialog :link{
 
 /*hide ui*/
 
-#toolbarViewer,
-#toolbarViewerLeft,
-#toolbarViewerMiddle,
-#toolbarViewerRight,
-#editorModeButtons,
-#viewFindButton,
-#viewFindSeparator,
-#numPages,
-#pageNumber,
-#scaleSelectContainer,
-#loadingBar,
+/* Hide the entire toolbar */
 #toolbarContainer {
     display: none !important;
 }
 
+/* Remove the space left by the toolbar */
 #viewerContainer {
     top: 0 !important;
 }
 
+/* Remove page scrollbar */
+html,
+body {
+    overflow: hidden !important;
+}
 
+/* Desktop */
+@media (min-width: 769px) {
+    #viewerContainer {
+        overflow: hidden !important;
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-  #toolbarContainer {
-    display: none !important;
-  }
+    /* PDF.js sometimes shows the page number in a floating toolbar */
+    #toolbarContainer,
+    #toolbarViewer,
+    #floatingToolbar,
+    #floatingToolbarContainer {
+        display: none !important;
+    }
 
-  #viewerContainer {
-    top: 0 !important;
-  }
+    #viewerContainer {
+        top: 0 !important;
+        overflow: hidden !important;
+    }
 }
