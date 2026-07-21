@@ -7826,23 +7826,27 @@ dialog :link{
   }
 }
 
-/* Keep the viewer flush with the top */
+/* Keep viewer flush with top */
 #viewerContainer {
-    top: 0 !important;
+  top: 0 !important;
 }
 
-/* Hide unwanted toolbar controls */
-#viewsManagerToggleButton,
-#viewFindButton,
-#printButton,
-#downloadButton,
-#secondaryToolbarToggle,
-#editorModeButtons,
-#zoomOutButton,
-#zoomInButton,
-#scaleSelectContainer,
-#presentationModeButton,
-#openFileButton,
-#viewBookmarkButton {
-    display: none !important;
+/* Hide entire middle and right toolbar groups */
+#toolbarViewerMiddle,
+#toolbarViewerRight {
+  display: none !important;
+}
+
+/* Hide the page manager/sidebar button */
+#viewsManagerToggleButton {
+  display: none !important;
+}
+
+/* Center the remaining controls */
+#toolbarViewer {
+  justify-content: center !important;
+}
+
+#toolbarViewerLeft {
+  margin: 0 auto !important;
 }
