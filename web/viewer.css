@@ -7859,11 +7859,4 @@ dialog :link{
     }
 }
 
-/* Remove scrollbars on desktop only */
-@media (min-width: 769px) {
-    html,
-    body,
-    #viewerContainer {
-        overflow: hidden !important;
-    }
-}
+
