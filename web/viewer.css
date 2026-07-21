@@ -7827,16 +7827,21 @@ dialog :link{
 }
 
 
-#toolbarContainer,
-#secondaryToolbar,
+#toolbarViewer,
+#toolbarViewerLeft,
+#toolbarViewerMiddle,
+#toolbarViewerRight,
 #editorModeButtons,
-#toolbarSidebar,
-#sidebarContainer,
-#findbar,
-#loadingBar {
-  display: none !important;
+#viewFindButton,
+#viewFindSeparator,
+#numPages,
+#pageNumber,
+#scaleSelectContainer,
+#loadingBar,
+#toolbarContainer {
+    display: none !important;
 }
 
 #viewerContainer {
-  top: 0 !important;
+    top: 0 !important;
 }
