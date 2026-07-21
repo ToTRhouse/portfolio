@@ -7826,7 +7826,7 @@ dialog :link{
   }
 }
 
-
+/* Hide UI */
 #toolbarViewer,
 #toolbarViewerLeft,
 #toolbarViewerMiddle,
@@ -7844,4 +7844,22 @@ dialog :link{
 
 #viewerContainer {
     top: 0 !important;
+}
+
+
+
+
+/* Hide unwanted buttons */
+#viewsManagerToggleButton,
+#zoomOutButton,
+#zoomInButton,
+#scaleSelectContainer,
+#viewFindButton,
+#printButton,
+#downloadButton,
+#editorModeButtons,
+#secondaryToolbarToggle,
+#presentationModeButton,
+#openFileButton {
+    display: none !important;
 }
